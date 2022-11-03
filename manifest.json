@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "site-blocker",
+  "version": "1.0.0",
+  "description": "Site blocker Chrome extension to reduce website clutter and improve your productivity. This is a very simple extension, so do not expect much from it. For now, only youtube is blocked.",
+  "icons": 
+  	{
+	"128": "icons/logo-128.png"
+	},
+  "content_scripts": 
+  	[
+	    {
+	      "matches": [
+	        "https://www.youtube.com/*"
+	      ],
+	      "css": [
+	        "css/style.css"
+	      ]
+	    }
+	  ],
+  "web_accessible_resources": [{
+    "resources": ["css/style.css"],
+    "matches": ["https://www.youtube.com/*"]
+  }]
+}
