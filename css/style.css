@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: monospace;
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+}
+
+html {
+  background: radial-gradient(68.34% 50% at 50% 50%, #2D9AFF 0%, #41DEE8 0%); \\68.34% 50% at 50% 50%, #2D9AFF 0%, #41DEE8 0%, #A22DFF 100%
+  height: 100vh;
+  padding: 200px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html::before {
+  content: 'Stay focused, go after your dreams and keep moving toward your goals.';
+  font-size: xx-large;
+}
+
+body {
+  display: none !important;
+}
